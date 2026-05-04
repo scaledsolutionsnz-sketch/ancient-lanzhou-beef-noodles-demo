@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Private Feedback — Ancient Lanzhou Beef Noodles</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--dk:#0C0809;--s1:#1A1012;--red:#CC2B30;--rlt:#E85257;--bord:rgba(204,43,48,.22);--bdim:rgba(204,43,48,.09);--text:#F6EDEA;--body:rgba(235,215,205,.72);--muted:rgba(165,135,125,.52)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:var(--dk);color:var(--text);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;-webkit-font-smoothing:antialiased;position:relative}
+body::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(204,43,48,.06) 0%,transparent 60%);pointer-events:none}
+
+.back-link{display:inline-flex;align-items:center;gap:.45rem;text-decoration:none;color:var(--muted);font-size:.78rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;margin-bottom:2rem;transition:color .2s}
+.back-link:hover{color:var(--red)}
+
+.brand{display:flex;flex-direction:column;align-items:center;gap:.15rem;margin-bottom:2rem;text-decoration:none}
+.brand-name{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--text)}
+.brand-name span{color:var(--rlt)}
+.brand-zh{font-size:.6rem;font-weight:400;color:var(--muted);letter-spacing:.18em}
+
+.card{position:relative;z-index:1;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:20px;padding:3rem 3.5rem;max-width:520px;width:100%;backdrop-filter:blur(14px)}
+.card-eye{font-size:.6rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--red);margin-bottom:.9rem;display:flex;align-items:center;justify-content:center;gap:.5rem}
+.card-eye::before,.card-eye::after{content:'';display:block;width:18px;height:1px;background:rgba(204,43,48,.4)}
+.card h1{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;letter-spacing:-.01em;color:var(--text);margin-bottom:.55rem;line-height:1.1;text-align:center}
+.card-sub{font-size:.88rem;color:var(--body);line-height:1.72;margin-bottom:1.8rem;text-align:center}
+
+.rating-row{display:flex;align-items:center;gap:.65rem;padding:.72rem 1.1rem;background:var(--bdim);border:1px solid var(--bord);border-radius:8px;margin-bottom:1.8rem;font-size:.84rem;color:var(--body)}
+.rat-stars{color:#f59e0b;letter-spacing:.1em}
+
+form label{display:block;font-size:.67rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.38rem;margin-top:1rem}
+form input,form textarea{width:100%;padding:.74rem .98rem;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;color:var(--text);font-family:'Inter',sans-serif;font-size:.88rem;outline:none;transition:border-color .2s}
+form input::placeholder,form textarea::placeholder{color:rgba(165,135,125,.3)}
+form input:focus,form textarea:focus{border-color:rgba(204,43,48,.45)}
+form textarea{resize:vertical;min-height:120px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:.85rem}
+.submit-btn{width:100%;margin-top:1.4rem;padding:.9rem;background:var(--red);color:#fff;border:none;border-radius:8px;font-size:.9rem;font-weight:600;letter-spacing:.05em;cursor:pointer;transition:background .2s,transform .15s}
+.submit-btn:hover{background:var(--rlt);transform:translateY(-1px)}
+.fnote{font-size:.73rem;color:var(--muted);text-align:center;margin-top:.7rem}
+
+.success{display:none;text-align:center;padding:2rem 0}
+.success.show{display:block}
+.suc-icon{font-size:3.5rem;margin-bottom:.9rem}
+.success h2{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--text);margin-bottom:.55rem}
+.success p{font-size:.9rem;color:var(--body);line-height:1.72;margin-bottom:1.4rem}
+.back-btn{display:inline-flex;align-items:center;gap:.45rem;padding:.72rem 1.8rem;background:transparent;color:var(--red);border:1px solid var(--bord);border-radius:7px;text-decoration:none;font-weight:600;font-size:.85rem;letter-spacing:.04em;text-transform:uppercase;transition:background .2s}
+.back-btn:hover{background:var(--bdim)}
+
+@media(max-width:480px){.card{padding:2rem 1.4rem}.frow{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<a href="review.html" class="back-link">
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+  Back
+</a>
+
+<a href="index.html" class="brand">
+  <span class="brand-name">Ancient Lanzhou <span>Beef Noodles</span></span>
+  <span class="brand-zh">上古金城兰州牛面 · Christchurch</span>
+</a>
+
+<div class="card">
+  <div class="card-eye">Private Feedback</div>
+  <h1>Thanks for letting us know.</h1>
+  <p class="card-sub">We're sorry to hear things weren't quite right. Your feedback goes directly to Mr Song so we can make it better next time.</p>
+
+  <div class="rating-row" id="ratingRow">
+    <span class="rat-stars" id="ratStars">★★★☆☆</span>
+    <span>Your private rating — not posted publicly</span>
+  </div>
+
+  <div id="formWrap">
+    <form id="privateForm" action="https://api.staticforms.xyz/submit" method="post" onsubmit="handleSubmit(event)">
+      <input type="hidden" name="apiKey" value="sf_768da8d33927e7f4f241d0a6">
+      <input type="hidden" name="subject" value="Private Feedback — Ancient Lanzhou Beef Noodles">
+      <input type="hidden" name="replyTo" value="@">
+      <input type="hidden" name="rating" id="hiddenRating" value="">
+      <input type="text" name="honeypot" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+
+      <div class="frow">
+        <div>
+          <label>First Name</label>
+          <input type="text" name="firstName" placeholder="John" required>
+        </div>
+        <div>
+          <label>Last Name</label>
+          <input type="text" name="lastName" placeholder="Smith">
+        </div>
+      </div>
+      <label>Email <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--muted)">(so we can follow up)</span></label>
+      <input type="email" name="email" placeholder="john@example.com">
+      <label>What could we do better?</label>
+      <textarea name="message" placeholder="Tell us what happened and how we can improve…" required></textarea>
+      <button type="submit" class="submit-btn" id="submitBtn">Send Feedback →</button>
+      <p class="fnote">Your feedback is private and goes directly to Mr Song.</p>
+    </form>
+  </div>
+
+  <div class="success" id="successMsg">
+    <div class="suc-icon">🙏</div>
+    <h2>Feedback Received</h2>
+    <p>Mr Song will personally review your message and be in touch if you've left your email. We appreciate you taking the time — it genuinely helps us improve.</p>
+    <a href="index.html" class="back-btn">← Back to Lanzhou Noodles</a>
+  </div>
+</div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const rating = parseInt(params.get('rating')) || 3;
+const starMap = {1:'★☆☆☆☆',2:'★★☆☆☆',3:'★★★☆☆'};
+document.getElementById('ratStars').textContent = starMap[rating] || '★★★☆☆';
+document.getElementById('hiddenRating').value = rating + ' star' + (rating > 1 ? 's' : '');
+
+async function handleSubmit(e){
+  e.preventDefault();
+  const btn = document.getElementById('submitBtn');
+  btn.textContent = 'Sending…'; btn.disabled = true;
+  try {
+    const res  = await fetch('https://api.staticforms.xyz/submit', { method:'POST', body: new FormData(e.target) });
+    const json = await res.json();
+    if(json.success){
+      document.getElementById('formWrap').style.display = 'none';
+      document.getElementById('ratingRow').style.display = 'none';
+      document.getElementById('successMsg').classList.add('show');
+    } else { throw new Error(); }
+  } catch {
+    btn.textContent = 'Error — try again';
+    btn.style.background = '#c0392b';
+    btn.disabled = false;
+  }
+}
+</script>
+</body>
+</html>

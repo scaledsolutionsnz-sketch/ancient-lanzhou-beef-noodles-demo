@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leave a Review — Ancient Lanzhou Beef Noodles</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--dk:#0C0809;--s1:#1A1012;--red:#CC2B30;--rlt:#E85257;--bord:rgba(204,43,48,.22);--bdim:rgba(204,43,48,.09);--text:#F6EDEA;--body:rgba(235,215,205,.72);--muted:rgba(165,135,125,.52)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:var(--dk);color:var(--text);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;-webkit-font-smoothing:antialiased;position:relative;overflow:hidden}
+body::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(204,43,48,.08) 0%,transparent 60%);pointer-events:none}
+
+.back-link{display:inline-flex;align-items:center;gap:.45rem;text-decoration:none;color:var(--muted);font-size:.78rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;margin-bottom:2rem;transition:color .2s}
+.back-link:hover{color:var(--red)}
+
+.brand{display:flex;flex-direction:column;align-items:center;gap:.15rem;margin-bottom:2rem;text-decoration:none}
+.brand-name{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--text)}
+.brand-name span{color:var(--rlt)}
+.brand-zh{font-size:.6rem;font-weight:400;color:var(--muted);letter-spacing:.18em}
+
+.card{position:relative;z-index:1;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:20px;padding:3rem 3.5rem;max-width:500px;width:100%;text-align:center;backdrop-filter:blur(14px)}
+.card-eye{font-size:.6rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--red);margin-bottom:.9rem;display:flex;align-items:center;justify-content:center;gap:.5rem}
+.card-eye::before,.card-eye::after{content:'';display:block;width:18px;height:1px;background:rgba(204,43,48,.4)}
+.card h1{font-family:'Playfair Display',serif;font-size:1.75rem;font-weight:700;letter-spacing:-.01em;color:var(--text);margin-bottom:.6rem;line-height:1.1}
+.card h1 em{font-style:italic;color:var(--rlt)}
+.card-sub{font-size:.88rem;color:var(--body);line-height:1.72;margin-bottom:2.2rem}
+
+.stars{display:flex;justify-content:center;gap:.5rem;margin-bottom:.7rem}
+.star{font-size:2.8rem;cursor:pointer;transition:transform .15s,filter .15s;filter:grayscale(1) brightness(.4);user-select:none;line-height:1}
+.star.lit{filter:none;transform:scale(1.1)}
+.star:hover{transform:scale(1.18)}
+
+.rating-label{font-size:.8rem;color:var(--muted);min-height:1.2em;margin-bottom:2rem;letter-spacing:.04em}
+
+.btn-continue{display:inline-flex;align-items:center;justify-content:center;gap:.45rem;padding:.9rem 2.4rem;background:var(--red);color:#fff;border:none;border-radius:7px;font-size:.92rem;font-weight:600;cursor:pointer;transition:background .2s,transform .2s;width:100%;letter-spacing:.03em;opacity:.38;pointer-events:none}
+.btn-continue.active{opacity:1;pointer-events:auto}
+.btn-continue.active:hover{background:var(--rlt);transform:translateY(-2px)}
+
+.divider{width:40px;height:1px;background:rgba(255,255,255,.07);margin:1.8rem auto 1.4rem}
+.private-note{font-size:.74rem;color:var(--muted)}
+.private-note a{color:rgba(246,237,234,.35);text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(255,255,255,.15)}
+.private-note a:hover{color:var(--red)}
+
+@media(max-width:480px){.card{padding:2rem 1.5rem}.card h1{font-size:1.5rem}.star{font-size:2.2rem}}
+</style>
+</head>
+<body>
+
+<a href="index.html" class="back-link">
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+  Back to site
+</a>
+
+<a href="index.html" class="brand">
+  <span class="brand-name">Ancient Lanzhou <span>Beef Noodles</span></span>
+  <span class="brand-zh">上古金城兰州牛面 · Christchurch</span>
+</a>
+
+<div class="card">
+  <div class="card-eye">Your Feedback</div>
+  <h1>How did we <em>do?</em></h1>
+  <p class="card-sub">Your experience matters to us. Rate us below and we'll take you straight to Google — it only takes a second and helps us serve Christchurch better.</p>
+
+  <div class="stars" id="stars">
+    <span class="star" data-val="1">⭐</span>
+    <span class="star" data-val="2">⭐</span>
+    <span class="star" data-val="3">⭐</span>
+    <span class="star" data-val="4">⭐</span>
+    <span class="star" data-val="5">⭐</span>
+  </div>
+  <div class="rating-label" id="ratingLabel">Select a star rating</div>
+
+  <button class="btn-continue" id="continueBtn" onclick="proceed()">Continue →</button>
+
+  <div class="divider"></div>
+  <p class="private-note">Prefer to share <a href="private.html">private feedback instead?</a></p>
+</div>
+
+<script>
+const LABELS = ['','Needs improvement','Could be better','Good experience','Great experience','Outstanding — 5 stars!'];
+const GOOGLE_URL = 'https://www.google.com/search?q=Ancient+Lanzhou+Beef+Noodles+Christchurch+reviews';
+let selected = 0;
+
+const stars = document.querySelectorAll('.star');
+const label = document.getElementById('ratingLabel');
+const btn   = document.getElementById('continueBtn');
+
+stars.forEach((s, i) => {
+  s.addEventListener('mouseenter', () => {
+    stars.forEach((x, j) => x.classList.toggle('lit', j <= i));
+    label.textContent = LABELS[i + 1];
+  });
+  s.addEventListener('mouseleave', () => {
+    stars.forEach((x, j) => x.classList.toggle('lit', j < selected));
+    label.textContent = selected ? LABELS[selected] : 'Select a star rating';
+  });
+  s.addEventListener('click', () => {
+    selected = i + 1;
+    stars.forEach((x, j) => x.classList.toggle('lit', j < selected));
+    label.textContent = LABELS[selected];
+    btn.classList.add('active');
+  });
+});
+
+function proceed(){
+  if(!selected) return;
+  window.location.href = selected >= 4 ? GOOGLE_URL : 'private.html?rating=' + selected;
+}
+</script>
+</body>
+</html>
