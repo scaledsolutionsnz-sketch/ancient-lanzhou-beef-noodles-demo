@@ -1,0 +1,53 @@
+{
+  "lang": "en", "html_lang": "en",
+  "brand": "Ancient Lanzhou", "brand_cn": "上古金城",
+  "tagline": "Hand-Pulled Lanzhou Beef Noodles",
+  "nav": { "menu": "Menu", "story": "Our Story", "gallery": "Gallery", "visit": "Visit Us", "order": "Order Online" },
+  "lang_toggle": "中文",
+  "entry": {
+    "kicker": "Two kitchens, one tradition",
+    "heading": "Choose your restaurant",
+    "sub": "Ancient Lanzhou serves authentic hand-pulled beef noodles in Auckland and Christchurch. Select a location to view its menu, hours and ordering.",
+    "auckland": "Auckland", "auckland_sub": "Ancient Lanzhou · Auckland",
+    "christchurch": "Christchurch", "christchurch_sub": "Ancient Lanzhou · Christchurch",
+    "enter": "Enter", "lang_hint": "EN / 中文"
+  },
+  "hero": {
+    "kicker": "Est. Lanzhou tradition",
+    "title": "A bowl a thousand years in the making",
+    "sub": "One clear broth, hand-pulled noodles and tender beef, made to order the way it has been for generations. Now in {city}.",
+    "cta_menu": "View the Menu", "cta_order": "Order Online",
+    "stat_broth": "Clear broth", "stat_broth_sub": "Slow-simmered daily",
+    "stat_pulled": "Hand-pulled", "stat_pulled_sub": "Made to order",
+    "stat_widths": "Nine widths", "stat_widths_sub": "Your noodle, your way"
+  },
+  "story": {
+    "kicker": "Our Story",
+    "title": "The taste of the old Golden City",
+    "body1": "Ancient Lanzhou (上古金城) brings the century-old craft of Lanzhou beef noodle soup to New Zealand. Every bowl begins with a broth simmered for hours with beef bone and spices, finished with noodles pulled fresh by hand for each order.",
+    "body2": "One clear broth, two white radish, three red chilli oil, four green coriander and garlic sprouts, five golden noodles — the five colours that define a real bowl of Lanzhou beef noodles.",
+    "point1": "Broth simmered from scratch every day",
+    "point2": "Noodles hand-pulled to order in nine widths",
+    "point3": "Halal-friendly beef, no artificial stock"
+  },
+  "menu": {
+    "kicker": "The Menu", "title": "{city} Menu",
+    "sub": "Prices in NZD. Menu and pricing shown are for our {city} restaurant.",
+    "note": "Spice levels can be adjusted on request. Please tell our staff about any allergies."
+  },
+  "visit": {
+    "kicker": "Find Us", "title": "Visit our {city} restaurant",
+    "hours_label": "Opening Hours", "address_label": "Address", "phone_label": "Phone",
+    "order_label": "Order Online", "directions": "Get Directions",
+    "order_intro": "Skip the queue — order for pick-up or delivery:",
+    "switch_hint": "Looking for our other restaurant?", "switch_cta": "Switch location"
+  },
+  "footer": {
+    "hours_title": "Hours", "visit_title": "Visit", "explore_title": "Explore",
+    "rights": "All rights reserved.", "made": "Auckland & Christchurch",
+    "disclaimer": "Menu, prices and photos shown are a working draft for demonstration."
+  },
+  "switcher": { "label": "Location", "change": "Change", "auckland": "Auckland", "christchurch": "Christchurch" },
+  "draft_banner": "Working draft — Chinese copy is placeholder and menu content is illustrative until finalised.",
+  "back_home": "Back to location select"
+}

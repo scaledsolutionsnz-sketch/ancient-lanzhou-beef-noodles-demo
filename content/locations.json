@@ -1,0 +1,46 @@
+{
+  "auckland": {
+    "slug": "auckland", "name_en": "Auckland", "name_zh": "奥克兰",
+    "address_en": "Shop 3, 200 Queen Street, Auckland CBD, Auckland 1010",
+    "address_zh": "奥克兰市中心皇后大街200号3号铺，1010",
+    "phone": "09 555 0110", "phone_display": "09 555 0110",
+    "email": "auckland@ancientlanzhou.co.nz",
+    "maps_query": "Ancient Lanzhou Beef Noodles Queen Street Auckland",
+    "hours_en": [
+      { "days": "Monday – Thursday", "time": "11:00am – 9:00pm" },
+      { "days": "Friday – Saturday", "time": "11:00am – 10:00pm" },
+      { "days": "Sunday", "time": "11:30am – 9:00pm" }
+    ],
+    "hours_zh": [
+      { "days": "周一至周四", "time": "上午11:00 – 晚上9:00" },
+      { "days": "周五至周六", "time": "上午11:00 – 晚上10:00" },
+      { "days": "周日", "time": "上午11:30 – 晚上9:00" }
+    ],
+    "order_links": [
+      { "label": "Uber Eats", "url": "https://www.ubereats.com/nz" },
+      { "label": "DoorDash", "url": "https://www.doordash.com/en-NZ" }
+    ]
+  },
+  "christchurch": {
+    "slug": "christchurch", "name_en": "Christchurch", "name_zh": "基督城",
+    "address_en": "Unit 5, 120 Riccarton Road, Riccarton, Christchurch 8041",
+    "address_zh": "基督城里卡顿路120号5单元，里卡顿，8041",
+    "phone": "03 555 0220", "phone_display": "03 555 0220",
+    "email": "christchurch@ancientlanzhou.co.nz",
+    "maps_query": "Ancient Lanzhou Beef Noodles Riccarton Road Christchurch",
+    "hours_en": [
+      { "days": "Monday – Thursday", "time": "11:30am – 8:30pm" },
+      { "days": "Friday – Saturday", "time": "11:30am – 9:30pm" },
+      { "days": "Sunday", "time": "12:00pm – 8:30pm" }
+    ],
+    "hours_zh": [
+      { "days": "周一至周四", "time": "上午11:30 – 晚上8:30" },
+      { "days": "周五至周六", "time": "上午11:30 – 晚上9:30" },
+      { "days": "周日", "time": "中午12:00 – 晚上8:30" }
+    ],
+    "order_links": [
+      { "label": "Uber Eats", "url": "https://www.ubereats.com/nz" },
+      { "label": "Delivereasy", "url": "https://www.delivereasy.co.nz" }
+    ]
+  }
+}

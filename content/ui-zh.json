@@ -1,0 +1,53 @@
+{
+  "lang": "zh", "html_lang": "zh",
+  "brand": "上古金城", "brand_cn": "Ancient Lanzhou",
+  "tagline": "手工兰州牛肉面",
+  "nav": { "menu": "菜单", "story": "品牌故事", "gallery": "图集", "visit": "门店信息", "order": "在线点餐" },
+  "lang_toggle": "EN",
+  "entry": {
+    "kicker": "两家门店，同一传承",
+    "heading": "选择您的门店",
+    "sub": "上古金城在奥克兰与基督城供应正宗手工兰州牛肉面。请选择门店，查看菜单、营业时间与点餐方式。",
+    "auckland": "奥克兰", "auckland_sub": "上古金城 · 奥克兰",
+    "christchurch": "基督城", "christchurch_sub": "上古金城 · 基督城",
+    "enter": "进入", "lang_hint": "EN / 中文"
+  },
+  "hero": {
+    "kicker": "百年兰州味",
+    "title": "一碗牛肉面，千年好味道",
+    "sub": "一清二白，手工拉面，现拉现煮，只为一碗地道的兰州牛肉面。现已登陆{city}。",
+    "cta_menu": "查看菜单", "cta_order": "在线点餐",
+    "stat_broth": "清汤", "stat_broth_sub": "每日慢炖",
+    "stat_pulled": "手工拉面", "stat_pulled_sub": "现点现拉",
+    "stat_widths": "九种粗细", "stat_widths_sub": "随您喜好"
+  },
+  "story": {
+    "kicker": "品牌故事",
+    "title": "金城古味，传承至今",
+    "body1": "上古金城将百年兰州牛肉面的手艺带到新西兰。每一碗都以牛骨与香料慢炖数小时熬制汤底，面条为每位客人现场手工拉制。",
+    "body2": "一清、二白、三红、四绿、五黄——清汤、白萝卜、红辣椒油、绿香菜蒜苗、黄亮面条，五色俱全，方是一碗地道的兰州牛肉面。",
+    "point1": "汤底每日现熬",
+    "point2": "面条现点现拉，九种粗细",
+    "point3": "清真友好牛肉，绝不添加人工汤精"
+  },
+  "menu": {
+    "kicker": "菜单", "title": "{city}菜单",
+    "sub": "价格为新西兰元。此菜单与价格适用于{city}门店。",
+    "note": "辣度可按需调整。如有过敏，请提前告知我们的员工。"
+  },
+  "visit": {
+    "kicker": "门店位置", "title": "欢迎光临{city}门店",
+    "hours_label": "营业时间", "address_label": "地址", "phone_label": "电话",
+    "order_label": "在线点餐", "directions": "查看路线",
+    "order_intro": "无需排队——外带或外送即刻下单：",
+    "switch_hint": "想去我们的另一家门店？", "switch_cta": "切换门店"
+  },
+  "footer": {
+    "hours_title": "营业时间", "visit_title": "到店", "explore_title": "浏览",
+    "rights": "版权所有。", "made": "奥克兰 & 基督城",
+    "disclaimer": "所示菜单、价格与图片为演示用草稿。"
+  },
+  "switcher": { "label": "门店", "change": "切换", "auckland": "奥克兰", "christchurch": "基督城" },
+  "draft_banner": "演示草稿 — 中文文案为占位内容，菜单仅供示意，正式内容以最终确认为准。",
+  "back_home": "返回门店选择"
+}
