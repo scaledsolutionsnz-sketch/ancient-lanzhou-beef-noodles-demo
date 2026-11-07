@@ -67,10 +67,55 @@
   var placeholderSVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 13a8 8 0 0 1 16 0"/><path d="M2 13h20"/><path d="M6 13v5a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-5"/><path d="M12 2v3M9 4l0 2M15 4l0 2"/></svg>';
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]; }); }
 
+  // A client photo: { base, w, h, alt_en, alt_zh } with base-480/-1080/-1920.webp beside it.
+  function photoImg(p, sizes, cls) {
+    var b = "/" + esc(p.base), long = Math.max(p.w, p.h);
+    var wAt = function (n) { return Math.round(p.w * n / long); };
+    var alt = state.lang === "zh" ? p.alt_zh : p.alt_en;
+    return '<img class="' + cls + '" src="' + b + '-1080.webp" srcset="' + b + '-480.webp ' + wAt(480) + 'w, ' + b + '-1080.webp ' + wAt(1080) + 'w, ' + b + '-1920.webp ' + wAt(1920) + 'w"' +
+      ' sizes="' + sizes + '" width="' + wAt(1080) + '" height="' + Math.round(p.h * 1080 / long) + '" alt="' + esc(alt) + '" loading="lazy" decoding="async">';
+  }
+  var viewPhotos = [];
+  function openPhotos(i) {
+    var item = viewPhotos[i], dlg = $("#photoView");
+    if (!item || !dlg || typeof dlg.showModal !== "function") return;
+    $("#photoViewImgs").innerHTML = item.photos.map(function (p) {
+      return photoImg(p, "(min-width: 900px) 820px, 92vw", "pv-img");
+    }).join("");
+    $("#photoViewCap").textContent = item.caption;
+    dlg.showModal();
+  }
+  function priceText(cur, price) { return /^\d/.test(price) ? cur + price : (state.lang === "zh" && price === "Free" ? "免费" : price); }
+
+  function renderNoodles(menu) {
+    var box = $("#menuNoodles"), n = menu.noodles;
+    if (!box) return;
+    if (!n) { box.hidden = true; box.innerHTML = ""; return; }
+    var zh = state.lang === "zh";
+    viewPhotos.push({ photos: [n.photo], caption: zh ? n.title_zh : n.title_en });
+    box.innerHTML =
+      '<button type="button" class="noodles-media" data-photo="' + (viewPhotos.length - 1) + '" aria-label="' + esc(zh ? "查看大图" : "View larger") + '">' +
+        photoImg(n.photo, "(min-width: 860px) 420px, 92vw", "noodles-img") + '</button>' +
+      '<div class="noodles-copy"><h3>' + esc(zh ? n.title_zh : n.title_en) + '</h3>' +
+        '<p>' + esc(zh ? n.text_zh : n.text_en) + '</p>' +
+        '<ul class="noodle-shapes">' + n.shapes.map(function (s) {
+          return '<li><b>' + esc(zh ? s.zh : s.en) + '</b><span>' + esc(zh ? s.en : s.zh) + '</span></li>';
+        }).join("") + '</ul></div>';
+    box.hidden = false;
+  }
+
   function renderMenu(menu) {
     var lang = state.lang, cur = menu.currency || "$";
     var tabs = $("#menuTabs"), root = $("#menuRoot");
     tabs.innerHTML = ""; root.innerHTML = "";
+    viewPhotos = [];
+    renderNoodles(menu);
+    var notes = lang === "zh" ? menu.notes_zh : menu.notes_en;
+    var noteEl = $("#menuNote");
+    if (noteEl) {
+      if (notes && notes.length) noteEl.innerHTML = notes.map(function (t) { return '<span>' + esc(t) + '</span>'; }).join("");
+      else { noteEl.textContent = ui().menu.note; }
+    }
     menu.categories.forEach(function (cat, i) {
       var catName = lang === "zh" ? cat.name_zh : cat.name_en;
       var tab = document.createElement("button");
@@ -90,19 +135,31 @@
         var primary = lang === "zh" ? d.name_zh : d.name_en;
         var secondary = lang === "zh" ? d.name_en : d.name_zh;
         var desc = lang === "zh" ? d.description_zh : d.description_en;
+        var tags = d.tags ? d.tags.map(function (t) { return lang === "zh" ? t.zh : t.en; }) : [];
         var tag = lang === "zh" ? d.tag_zh : d.tag_en;
-        var img = d.image
-          ? '<img class="dish-img" src="/' + esc(d.image) + '" alt="' + esc(primary) + '" loading="lazy">'
-          : '<div class="dish-img placeholder">' + placeholderSVG + '</div>';
-        return '<div class="dish">' + img +
+        if (tag) tags.push(tag);
+        var img = "";
+        if (!cat.compact) {
+          if (d.photos && d.photos.length) {
+            viewPhotos.push({ photos: d.photos, caption: (d.code ? d.code + " " : "") + primary + " · " + secondary });
+            img = '<button type="button" class="dish-photo" data-photo="' + (viewPhotos.length - 1) + '" aria-label="' + esc((lang === "zh" ? "查看大图：" : "View photo: ") + primary) + '">' +
+              photoImg(d.photos[0], "88px", "dish-img") +
+              (d.photos.length > 1 ? '<span class="dish-more">+' + (d.photos.length - 1) + '</span>' : '') + '</button>';
+          } else if (d.image) {
+            img = '<img class="dish-img" src="/' + esc(d.image) + '" alt="' + esc(primary) + '" loading="lazy">';
+          } else {
+            img = '<div class="dish-img placeholder">' + placeholderSVG + '</div>';
+          }
+        }
+        return '<div class="dish' + (cat.compact ? ' dish-compact' : '') + '">' + img +
           '<div class="dish-body"><div class="dish-top">' +
-            '<span class="dish-code">' + esc(d.code) + '</span>' +
+            (d.code ? '<span class="dish-code">' + esc(d.code) + '</span>' : '') +
             '<span class="dish-name">' + esc(primary) + '</span>' +
-            '<span class="dish-price">' + cur + esc(d.price) + '</span>' +
+            '<span class="dish-price">' + esc(priceText(cur, d.price)) + '</span>' +
           '</div>' +
           '<div class="dish-alt">' + esc(secondary) + '</div>' +
           (desc ? '<p class="dish-desc">' + esc(desc) + '</p>' : '') +
-          (tag ? '<span class="dish-tag">' + esc(tag) + '</span>' : '') +
+          tags.map(function (t) { return '<span class="dish-tag">' + esc(t) + '</span>'; }).join(" ") +
           '</div></div>';
       }).join("");
 
@@ -112,7 +169,7 @@
       section.innerHTML =
         '<div class="menu-cat-head"><h3>' + esc(catName) + '</h3>' +
         (note ? '<span class="cat-note">' + esc(note) + '</span>' : '') + '</div>' +
-        '<div class="dish-grid">' + dishesHtml + '</div>';
+        '<div class="dish-grid' + (cat.compact ? ' dish-grid-compact' : '') + '">' + dishesHtml + '</div>';
       root.appendChild(section);
     });
   }
@@ -240,6 +297,16 @@
     $("#switchBtn").addEventListener("click", switchLocation);
     $("#fSwitch").addEventListener("click", function (e) { e.preventDefault(); switchLocation(); });
     $("#mobileSwitch").addEventListener("click", function (e) { e.preventDefault(); closeMobile(); switchLocation(); });
+    // dish photos open full size (uncropped) in a dialog
+    $("#menu").addEventListener("click", function (e) {
+      var b = e.target.closest ? e.target.closest("[data-photo]") : null;
+      if (b) openPhotos(+b.getAttribute("data-photo"));
+    });
+    var pv = $("#photoView");
+    if (pv) {
+      $("#photoViewClose").addEventListener("click", function () { pv.close(); });
+      pv.addEventListener("click", function (e) { if (e.target === pv) pv.close(); });
+    }
     // burger
     var mm = $("#mobileMenu");
     $("#burger").addEventListener("click", function () { mm.classList.toggle("open"); });
