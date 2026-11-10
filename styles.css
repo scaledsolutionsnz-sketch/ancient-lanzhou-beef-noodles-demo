@@ -261,6 +261,7 @@ body.lang-zh .info-label{letter-spacing:.1em}
 .foot-brand p{color:var(--muted);font-size:.9rem;max-width:34ch}
 .foot-col h4{font-family:var(--sans);font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
 .foot-col a,.foot-col p,.foot-col .hours-row{color:var(--muted);font-size:.9rem;display:block;margin-bottom:9px}
+.foot-col .hours-row{display:flex;justify-content:flex-start}
 .foot-col a:hover{color:var(--gold-2)}
 .foot-bottom{border-top:1px solid var(--line-soft);margin-top:40px;padding-top:22px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;color:var(--muted-2);font-size:.78rem}
 
