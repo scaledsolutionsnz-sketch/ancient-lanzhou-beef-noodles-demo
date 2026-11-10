@@ -571,6 +571,15 @@
               "en": "Vegetarian",
               "zh": "素食"
             }
+          ],
+          "photos": [
+            {
+              "base": "images/akl-f3-pork-dumplings",
+              "w": 1920,
+              "h": 1920,
+              "alt_en": "Plate of boiled hand-made dumplings",
+              "alt_zh": "手工水饺实拍"
+            }
           ]
         },
         {

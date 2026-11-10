@@ -1,20 +1,20 @@
 {
   "auckland": {
     "slug": "auckland", "name_en": "Auckland", "name_zh": "奥克兰",
-    "address_en": "Shop 3, 200 Queen Street, Auckland CBD, Auckland 1010",
-    "address_zh": "奥克兰市中心皇后大街200号3号铺，1010",
-    "phone": "09 555 0110", "phone_display": "09 555 0110",
+    "address_en": "2 Morrow Street, Newmarket, Auckland 1023",
+    "address_zh": "2 Morrow Street, Newmarket, Auckland 1023",
+    "phone": "029 0400 1215", "phone_display": "029 0400 1215",
     "email": "auckland@ancientlanzhou.co.nz",
-    "maps_query": "Ancient Lanzhou Beef Noodles Queen Street Auckland",
+    "maps_query": "Ancient Lanzhou Beef Noodles, 2 Morrow Street, Newmarket, Auckland 1023",
     "hours_en": [
-      { "days": "Monday – Thursday", "time": "11:00am – 9:00pm" },
-      { "days": "Friday – Saturday", "time": "11:00am – 10:00pm" },
-      { "days": "Sunday", "time": "11:30am – 9:00pm" }
+      { "days": "Monday, Tuesday", "time": "11am to 9pm" },
+      { "days": "Wednesday", "time": "11am to 2:30pm" },
+      { "days": "Thursday to Sunday", "time": "11am to 9pm" }
     ],
     "hours_zh": [
-      { "days": "周一至周四", "time": "上午11:00 – 晚上9:00" },
-      { "days": "周五至周六", "time": "上午11:00 – 晚上10:00" },
-      { "days": "周日", "time": "上午11:30 – 晚上9:00" }
+      { "days": "周一、周二", "time": "上午11:00 至 晚上9:00" },
+      { "days": "周三", "time": "上午11:00 至 下午2:30" },
+      { "days": "周四至周日", "time": "上午11:00 至 晚上9:00" }
     ],
     "order_links": [
       { "label": "Uber Eats", "url": "https://www.ubereats.com/nz" },
