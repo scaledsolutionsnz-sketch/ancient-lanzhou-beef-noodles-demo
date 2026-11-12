@@ -3,192 +3,333 @@
   "currency": "$",
   "categories": [
     {
-      "id": "soups",
-      "name_en": "Signature Beef Noodle Soups",
-      "name_zh": "招牌牛肉面",
-      "note_en": "Choose any noodle width — just let us know.",
-      "note_zh": "面型任选，请告知我们。",
+      "id": "noodles",
+      "name_en": "Noodle Soups & Signature Noodles",
+      "name_zh": "汤面 · 特色面",
+      "note_en": "You can choose any noodle shape, just let us know.",
+      "note_zh": "您可以选择任何面型并告知我们。",
       "dishes": [
         {
           "code": "A1",
-          "name_en": "Classic Lanzhou Beef Noodle Soup",
-          "name_zh": "兰州牛肉面",
-          "description_en": "Clear beef-bone broth, sliced beef, white radish, chilli oil, coriander and hand-pulled noodles.",
-          "description_zh": "牛骨清汤、牛肉片、白萝卜、辣椒油、香菜与手工拉面。",
-          "price": "15.80",
-          "image": "images/beef-noodle.jpg",
-          "tag_en": "Signature",
-          "tag_zh": "招牌"
+          "name_en": "Traditional Beef Noodle Soup",
+          "name_zh": "传统兰州牛肉面",
+          "description_en": "Handmade noodles with slow cooked beef shank and white radish. Beef shank, white radish, coriander, leek.",
+          "description_zh": "手工拉面配慢炖牛腱肉与白萝卜。牛腱肉、白萝卜、香菜、蒜苗。",
+          "price": "18.99",
+          "tags": [
+            {
+              "en": "Signature dish",
+              "zh": "招牌"
+            }
+          ]
         },
         {
           "code": "A2",
-          "name_en": "Signature Braised Beef Noodle Soup",
-          "name_zh": "招牌红烧牛肉面",
-          "description_en": "Beef brisket, white radish, coriander, leek and hand-pulled noodles.",
-          "description_zh": "红烧牛腩、白萝卜、香菜、蒜苗与手工拉面。",
-          "price": "18.80",
-          "image": "images/a2-braised.jpg",
-          "tag_en": "Best seller",
-          "tag_zh": "热销"
+          "name_en": "Braised Beef Noodle Soup",
+          "name_zh": "经典红烧牛肉面",
+          "description_en": "Navel end brisket, white radish, coriander, leek.",
+          "description_zh": "牛腩、白萝卜、香菜、蒜苗。",
+          "price": "20.99",
+          "tags": [
+            {
+              "en": "Signature dish",
+              "zh": "招牌"
+            }
+          ],
+          "photos": [
+            {
+              "base": "images/chc-a2-braised-beef-noodle-soup",
+              "w": 1920,
+              "h": 1920,
+              "alt_en": "Braised beef noodle soup with chunks of beef, sliced white radish, coriander and chilli oil in a blue and white 上古金城 bowl",
+              "alt_zh": "经典红烧牛肉面实拍"
+            }
+          ]
         },
         {
           "code": "A3",
-          "name_en": "Pickled Mustard Beef Noodle Soup",
+          "name_en": "Pickled Cabbage Beef Noodle Soup",
           "name_zh": "酸菜牛肉面",
-          "description_en": "Beef shank, pickled mustard, white radish, coriander, leek and hand-pulled noodles.",
-          "description_zh": "牛腱子、酸菜、白萝卜、香菜、蒜苗与手工拉面。",
-          "price": "17.80",
-          "image": "images/a3-pickled.jpg"
+          "description_en": "Beef shank, pickled cabbage, white radish, coriander, leek.",
+          "description_zh": "牛腱肉、酸菜、白萝卜、香菜、蒜苗。",
+          "price": "19.99",
+          "photos": [
+            {
+              "base": "images/chc-a3-pickled-cabbage-beef-noodle-soup",
+              "w": 1920,
+              "h": 1920,
+              "alt_en": "Beef noodle soup topped with sliced beef shank, pickled cabbage, white radish and chilli oil",
+              "alt_zh": "酸菜牛肉面实拍"
+            }
+          ]
         },
         {
-          "code": "A8",
-          "name_en": "Premium Tomato Braised Beef Noodle Soup",
-          "name_zh": "精品番炸牛肉面",
-          "description_en": "Beef brisket, tomato, mushroom, bok choy, soybean sprouts, egg and hand-pulled noodles.",
-          "description_zh": "红烧牛腩、番茄、菌菇、青菜、豆芽、鸡蛋与手工拉面。",
-          "price": "21.80",
-          "image": null
-        }
-      ]
-    },
-    {
-      "id": "handmade",
-      "name_en": "Handmade Noodles · Hot & Cold",
-      "name_zh": "干拌面 · 凉面",
-      "dishes": [
-        {
           "code": "A4",
-          "name_en": "Traditional Chilli-Oil Splash Noodles",
-          "name_zh": "西北传统油泼面",
-          "description_en": "Bok choy, soybean sprouts, chilli, garlic and hand-pulled noodles.",
-          "description_zh": "青菜、豆芽、辣椒、蒜与手工拉面。",
-          "price": "13.80",
-          "image": null,
-          "tag_en": "Vegetarian",
-          "tag_zh": "素食"
+          "name_en": "Noodle Soup with Beef Neck Bone",
+          "name_zh": "至尊牛大骨面",
+          "description_en": "Sliced beef neck bone, white radish, coriander, leek.",
+          "description_zh": "牛大骨、白萝卜、香菜、蒜苗。",
+          "price": "22.99",
+          "tags": [
+            {
+              "en": "Best choice",
+              "zh": "人气首选"
+            }
+          ],
+          "photos": [
+            {
+              "base": "images/chc-a4-beef-neck-bone-noodle-soup",
+              "w": 1920,
+              "h": 1706,
+              "alt_en": "A bowl of noodle soup with white radish, coriander and chilli oil, served with a side bowl of braised beef neck bone",
+              "alt_zh": "至尊牛大骨面实拍"
+            }
+          ]
         },
         {
           "code": "A5",
-          "name_en": "Chilli-Oil Splash Noodles with Braised Beef",
-          "name_zh": "西北油泼面（加牛肉）",
-          "description_en": "Beef brisket, bok choy, soybean sprouts, chilli, garlic and hand-pulled noodles.",
-          "description_zh": "红烧牛肉、青菜、豆芽、辣椒、蒜与手工拉面。",
-          "price": "19.80",
-          "image": "images/a5-oil.jpg"
+          "name_en": "Traditional Oil-splashed Wide Noodles",
+          "name_zh": "西北油泼面（宽面）",
+          "description_en": "Shanghai bok choy, mung bean sprout, chilli powder, minced garlic. Add braised beef +$6.99 or pickled cabbage +$2.99. Extra beef soup is free.",
+          "description_zh": "上海青、绿豆芽、辣椒面、蒜末。特价红烧牛肉 +$6.99，老坛酸菜 +$2.99，免费牛肉汤。",
+          "price": "15.99",
+          "photos": [
+            {
+              "base": "images/chc-a5-oil-splash-wide-noodles",
+              "w": 1920,
+              "h": 1920,
+              "alt_en": "Wide hand-pulled noodles topped with chilli powder, spring onion, bok choy and bean sprouts",
+              "alt_zh": "西北油泼面（宽面）实拍"
+            }
+          ]
         },
         {
           "code": "A6",
-          "name_en": "Chef's Special Vegetarian Cold Noodles",
-          "name_zh": "金城特色凉面",
-          "description_en": "Carrot, cucumber, sesame paste, soybean sprouts, garlic and hand-pulled noodles.",
-          "description_zh": "胡萝卜、黄瓜、芝麻酱、豆芽、蒜与手工拉面。",
-          "price": "13.80",
-          "image": null,
-          "tag_en": "Vegetarian",
-          "tag_zh": "素食"
-        },
-        {
-          "code": "A7",
-          "name_en": "Chef's Special Cold Noodles with Beef Shank",
-          "name_zh": "金城特色凉面（加牛腱子）",
-          "description_en": "Beef shank, carrot, cucumber, sesame paste, soybean sprouts, garlic and hand-pulled noodles.",
-          "description_zh": "牛腱子、胡萝卜、黄瓜、芝麻酱、豆芽、蒜与手工拉面。",
-          "price": "18.80",
-          "image": null
+          "name_en": "Traditional Beef Mince Noodles",
+          "name_zh": "金城牛肉炸酱面",
+          "description_en": "Beef mince, mung bean sprout, cucumber, leek, coriander.",
+          "description_zh": "牛肉末、绿豆芽、黄瓜、蒜苗、香菜。",
+          "price": "17.99"
         }
       ]
     },
     {
-      "id": "bowls",
-      "name_en": "Stir-Fried over Noodles / Rice",
-      "name_zh": "拌面 · 盖饭",
+      "id": "stir-fried",
+      "name_en": "Special Stir-fried with Handmade Noodles / Rice",
+      "name_zh": "干拌面 / 盖饭类",
       "note_en": "Choose noodles or rice.",
-      "note_zh": "可选拌面或盖饭。",
+      "note_zh": "可选拌面或盖浇饭。",
       "dishes": [
         {
           "code": "B1",
-          "name_en": "Traditional Stir-Fried Beef over Noodles / Rice",
-          "name_zh": "上古传承牛肉拌面 / 饭",
-          "description_en": "Beef, onion, capsicum, potato, leek and hand-pulled noodles.",
-          "description_zh": "牛肉、洋葱、青椒、土豆、蒜苗与手工拉面。",
-          "price": "19.80",
-          "image": "images/b1-beef.jpg",
-          "tag_en": "Signature",
-          "tag_zh": "招牌必点"
+          "name_en": "Velvety Stir-fried Beef Slices with Noodles / Rice",
+          "name_zh": "上古传承牛肉片拌面 / 盖浇饭",
+          "description_en": "Beef topside, green and red chilli peppers, onion, leek.",
+          "description_zh": "牛肉片、青红椒、洋葱、蒜苗。",
+          "price": "19.99",
+          "tags": [
+            {
+              "en": "Signature dish",
+              "zh": "招牌"
+            }
+          ],
+          "photos": [
+            {
+              "base": "images/chc-b1-stir-fried-beef-noodles",
+              "w": 1920,
+              "h": 1920,
+              "alt_en": "Stir-fried beef slices with red and green peppers, onion and leek on hand-pulled noodles",
+              "alt_zh": "上古传承牛肉片拌面实拍"
+            },
+            {
+              "base": "images/chc-b1-stir-fried-beef-rice",
+              "w": 1920,
+              "h": 1920,
+              "alt_en": "Stir-fried beef slices with peppers and onion beside a mound of steamed rice",
+              "alt_zh": "上古传承牛肉片盖浇饭实拍"
+            }
+          ]
         },
         {
           "code": "B2",
-          "name_en": "Lanzhou Braised Lamb over Noodles / Rice",
-          "name_zh": "金城酱焖羊肉拌面 / 饭",
-          "description_en": "Lamb, potato, capsicum, onion, leek and hand-pulled noodles.",
-          "description_zh": "羊肉、土豆、青椒、洋葱、蒜苗与手工拉面。",
-          "price": "22.80",
-          "image": "images/b2-lamb.jpg"
+          "name_en": "Braised Beef Belly with Noodles / Rice",
+          "name_zh": "金城红烧牛肉拌面 / 盖浇饭",
+          "description_en": "Navel end brisket, onion, garlic sprout, celery, potato.",
+          "description_zh": "牛腩、洋葱、蒜薹、芹菜、土豆。",
+          "price": "19.99"
         },
         {
           "code": "B3",
-          "name_en": "Braised Pork Belly & Eggplant over Noodles / Rice",
-          "name_zh": "茄子肉拌面 / 饭",
-          "description_en": "Pork, eggplant, capsicum, celery, onion and hand-pulled noodles.",
-          "description_zh": "猪肉、茄子、青椒、芹菜、洋葱与手工拉面。",
-          "price": "18.80",
-          "image": null
+          "name_en": "Braised Eggplant & Pork with Noodles / Rice",
+          "name_zh": "古法烧茄子五花肉拌面 / 盖浇饭",
+          "description_en": "Pork belly, eggplant, garlic sprout, celery, onion.",
+          "description_zh": "五花肉、茄子、蒜薹、芹菜、洋葱。",
+          "price": "19.99",
+          "tags": [
+            {
+              "en": "Signature dish",
+              "zh": "招牌"
+            }
+          ],
+          "photos": [
+            {
+              "base": "images/chc-b3-pork-belly-eggplant",
+              "w": 1920,
+              "h": 1920,
+              "alt_en": "Braised pork belly and eggplant with red and green peppers on hand-pulled noodles",
+              "alt_zh": "古法烧茄子五花肉拌面实拍"
+            }
+          ]
         },
         {
           "code": "B4",
-          "name_en": "Spicy Chilli Beef over Noodles / Rice",
-          "name_zh": "辣椒炒牛肉拌面 / 饭",
-          "description_en": "Chilli pepper, beef, salted black bean, chilli oil and hand-pulled noodles.",
-          "description_zh": "辣椒、牛肉、豆豉、辣椒油与手工拉面。",
-          "price": "18.80",
-          "image": null,
-          "tag_en": "Spicy",
-          "tag_zh": "香辣"
+          "name_en": "Braised Lamb in Brown Sauce with Noodles / Rice",
+          "name_zh": "金城黄焖羊肉拌面 / 盖浇饭",
+          "description_en": "Boneless lamb shoulder, onion, potato, garlic sprout, celery.",
+          "description_zh": "去骨羊肩肉、洋葱、土豆、蒜薹、芹菜。",
+          "price": "20.99",
+          "photos": [
+            {
+              "base": "images/chc-b4-braised-lamb-noodles",
+              "w": 1920,
+              "h": 1920,
+              "alt_en": "Braised lamb with potato, peppers and onion on hand-pulled noodles",
+              "alt_zh": "金城黄焖羊肉拌面实拍"
+            },
+            {
+              "base": "images/chc-b4-braised-lamb-rice",
+              "w": 1920,
+              "h": 1920,
+              "alt_en": "Braised lamb with peppers and onion in sauce beside a mound of steamed rice",
+              "alt_zh": "金城黄焖羊肉盖浇饭实拍"
+            }
+          ]
+        },
+        {
+          "code": "B5",
+          "name_en": "Tomato Scrambled Eggs with Noodles / Rice",
+          "name_zh": "西北番茄炒蛋拌面 / 盖浇饭",
+          "description_en": "Tomato, scrambled eggs, black fungus, Shanghai bok choy, green pepper, garlic sprout.",
+          "description_zh": "番茄、炒鸡蛋、木耳、上海青、青椒、蒜薹。",
+          "price": "19.99",
+          "tags": [
+            {
+              "en": "New",
+              "zh": "新品"
+            }
+          ]
         }
       ]
     },
     {
       "id": "fried",
       "name_en": "Fried Noodles & Fried Rice",
-      "name_zh": "炒面 · 炒饭",
+      "name_zh": "炒面 / 炒饭",
       "dishes": [
         {
           "code": "C1",
-          "name_en": "Stir-Fried Noodles with Chicken",
+          "name_en": "Stir-fried Noodles with Chicken",
           "name_zh": "鸡肉炒面",
-          "description_en": "Chicken breast, courgette, onion, capsicum and cabbage.",
-          "description_zh": "鸡胸肉、西葫芦、洋葱、青椒与卷心菜。",
-          "price": "16.80",
-          "image": "images/c1-fried.jpg"
+          "description_en": "Chicken breast, courgette, celery, garlic sprout, mung bean sprout, onion, cabbage.",
+          "description_zh": "鸡胸肉、西葫芦、芹菜、蒜薹、绿豆芽、洋葱、卷心菜。",
+          "price": "18.99",
+          "photos": [
+            {
+              "base": "images/chc-c1-fried-noodles-chicken",
+              "w": 1920,
+              "h": 1920,
+              "alt_en": "Stir-fried noodles with chicken, courgette, onion and red and green peppers on a blue and white plate",
+              "alt_zh": "鸡肉炒面实拍"
+            }
+          ]
         },
         {
           "code": "C2",
-          "name_en": "Stir-Fried Noodles with Beef",
+          "name_en": "Stir-fried Noodles with Beef",
           "name_zh": "牛肉炒面",
-          "description_en": "Beef, courgette, onion, capsicum and cabbage.",
-          "description_zh": "牛肉、西葫芦、洋葱、青椒与卷心菜。",
-          "price": "17.80",
-          "image": null
+          "description_en": "Beef topside eye round, courgette, celery, garlic sprout, mung bean sprout, onion, cabbage.",
+          "description_zh": "牛后腿肉、西葫芦、芹菜、蒜薹、绿豆芽、洋葱、卷心菜。",
+          "price": "18.99",
+          "tags": [
+            {
+              "en": "Recommended",
+              "zh": "推荐"
+            }
+          ],
+          "photos": [
+            {
+              "base": "images/chc-c2-fried-noodles-beef",
+              "w": 1920,
+              "h": 1920,
+              "alt_en": "Stir-fried noodles with sliced beef, courgette, onion and peppers on a blue and white plate",
+              "alt_zh": "牛肉炒面实拍"
+            }
+          ]
         },
         {
           "code": "C3",
-          "name_en": "Stir-Fried Noodles with Vegetables & Egg",
-          "name_zh": "素炒面",
-          "description_en": "Egg, courgette, onion, capsicum and cabbage.",
-          "description_zh": "鸡蛋、西葫芦、洋葱、青椒与卷心菜。",
-          "price": "16.80",
-          "image": null,
-          "tag_en": "Vegetarian",
-          "tag_zh": "素食"
+          "name_en": "Stir-fried Noodles with Lamb",
+          "name_zh": "羊肉炒面",
+          "description_en": "Boneless lamb shoulder, courgette, celery, garlic sprout, mung bean sprout, onion, cabbage.",
+          "description_zh": "去骨羊肩肉、西葫芦、芹菜、蒜薹、绿豆芽、洋葱、卷心菜。",
+          "price": "19.99"
         },
         {
           "code": "C4",
-          "name_en": "Cumin Fried Rice (Lamb / Beef / Chicken)",
-          "name_zh": "孜然炒饭（羊 / 牛 / 鸡）",
-          "description_en": "Cumin-spiced lamb, beef or chicken with onion and capsicum.",
-          "description_zh": "孜然羊肉、牛肉或鸡肉配洋葱与青椒。",
-          "price": "17.80",
-          "image": null
+          "name_en": "Fried Noodles with Vegetables",
+          "name_zh": "素炒面",
+          "description_en": "Courgette, celery, garlic sprout, mung bean sprout, onion, cabbage.",
+          "description_zh": "西葫芦、芹菜、蒜薹、绿豆芽、洋葱、卷心菜。",
+          "price": "17.99",
+          "photos": [
+            {
+              "base": "images/chc-c4-fried-noodles-vegetables",
+              "w": 1920,
+              "h": 1920,
+              "alt_en": "Stir-fried noodles with egg, courgette, onion and peppers on a blue and white plate",
+              "alt_zh": "素炒面实拍"
+            }
+          ]
+        },
+        {
+          "code": "C5",
+          "name_en": "Fried Rice with Assorted Meats & Vegetables",
+          "name_zh": "扬州炒饭",
+          "description_en": "Prawn, egg, spring onion, peas, corn kernels, diced carrots.",
+          "description_zh": "虾仁、鸡蛋、葱、青豆、玉米粒、胡萝卜丁。",
+          "price": "17.99",
+          "photos": [
+            {
+              "base": "images/chc-c5-fried-rice-assorted",
+              "w": 1920,
+              "h": 1280,
+              "alt_en": "Fried rice with prawns, egg, peas and diced carrot on a black plate",
+              "alt_zh": "扬州炒饭实拍"
+            }
+          ]
+        },
+        {
+          "code": "C6",
+          "name_en": "Beef Fried Rice with Onion",
+          "name_zh": "洋葱牛肉炒饭",
+          "description_en": "Minced beef, onion, carrot, spring onion.",
+          "description_zh": "牛肉末、洋葱、胡萝卜、葱。",
+          "price": "17.99",
+          "tags": [
+            {
+              "en": "Recommended",
+              "zh": "推荐"
+            }
+          ],
+          "photos": [
+            {
+              "base": "images/chc-c6-beef-fried-rice-onion",
+              "w": 1920,
+              "h": 1498,
+              "alt_en": "Fried rice with minced beef, onion, carrot and spring onion on a blue plate",
+              "alt_zh": "洋葱牛肉炒饭实拍"
+            }
+          ]
         }
       ]
     },
@@ -199,132 +340,205 @@
       "dishes": [
         {
           "code": "D1",
-          "name_en": "Grilled Lamb Skewers (3 pcs)",
-          "name_zh": "羊肉串（3串）",
-          "description_en": "Char-grilled cumin lamb skewers.",
-          "description_zh": "炭烤孜然羊肉串。",
-          "price": "8.80",
-          "image": "images/d1-skewers.jpg",
-          "tag_en": "Popular",
-          "tag_zh": "人气推荐"
+          "name_en": "Premium Beef Shank",
+          "name_zh": "精品酱牛腱",
+          "price": "8.99",
+          "photos": [
+            {
+              "base": "images/chc-d1-premium-beef-shank",
+              "w": 1920,
+              "h": 1704,
+              "alt_en": "Slices of marinated beef shank fanned out on a plate",
+              "alt_zh": "精品酱牛腱实拍"
+            }
+          ]
         },
         {
           "code": "D2",
-          "name_en": "Sliced Beef with Coriander (100g)",
-          "name_zh": "夫妻肺片",
-          "description_en": "Chilled sliced beef in a fragrant chilli dressing.",
-          "description_zh": "凉拌牛肉薄片，香辣红油。",
-          "price": "12.80",
-          "image": null,
-          "tag_en": "Spicy",
-          "tag_zh": "香辣"
+          "name_en": "Lamb Skewers (5)",
+          "name_zh": "羊肉串（5串）",
+          "price": "13.99",
+          "tags": [
+            {
+              "en": "Best choice",
+              "zh": "人气首选"
+            }
+          ],
+          "photos": [
+            {
+              "base": "images/chc-d2-lamb-skewers",
+              "w": 1920,
+              "h": 1280,
+              "alt_en": "Five spiced lamb skewers on a white oval plate",
+              "alt_zh": "羊肉串（5串）实拍"
+            }
+          ]
         },
         {
           "code": "D3",
-          "name_en": "Cumin Lamb Ribs (3 pcs)",
-          "name_zh": "孜然羊排（3支）",
-          "description_en": "Cumin-roasted lamb ribs.",
-          "description_zh": "孜然烤羊排。",
-          "price": "7.80",
-          "image": null
+          "name_en": "Spicy Potato Slices",
+          "name_zh": "传统麻辣洋芋片",
+          "price": "8.99",
+          "photos": [
+            {
+              "base": "images/chc-d3-spicy-potato-slices",
+              "w": 1920,
+              "h": 1646,
+              "alt_en": "Potato slices in a spicy chilli sauce with sesame seeds and spring onion",
+              "alt_zh": "传统麻辣洋芋片实拍"
+            }
+          ]
         },
         {
           "code": "D4",
-          "name_en": "Special Side Dishes",
-          "name_zh": "特色小菜",
-          "description_en": "Daily selection of house sides. Small $2.5 · Large $6 (choose 3).",
-          "description_zh": "每日特色小菜。小份 $2.5 · 大份 $6（任选三样）。",
-          "price": "2.50 / 6.00",
-          "image": null,
-          "tag_en": "Vegetarian",
-          "tag_zh": "素食"
+          "name_en": "Hot Milk with Sweet Fermented Rice & Egg",
+          "name_zh": "西北牛奶鸡蛋醪糟",
+          "description_en": "Dessert.",
+          "description_zh": "甜品。",
+          "price": "7.99",
+          "photos": [
+            {
+              "base": "images/chc-d4-hot-milk-fermented-rice",
+              "w": 1920,
+              "h": 1920,
+              "alt_en": "A bowl of hot milk with egg and sweet fermented rice, topped with black sesame, peanuts, raisins and dried fruit",
+              "alt_zh": "西北牛奶鸡蛋醪糟实拍"
+            }
+          ]
         },
         {
           "code": "D5",
-          "name_en": "Hot & Spicy Wide Potato Noodles",
-          "name_zh": "酸辣泡汁宽粉",
-          "description_en": "Wide potato noodles in a hot-and-sour chilli broth.",
-          "description_zh": "宽粉浸酸辣汤汁。",
-          "price": "7.80",
-          "image": null,
-          "tag_en": "Spicy",
-          "tag_zh": "香辣"
+          "name_en": "Spicy Sour Hotpot Noodles",
+          "name_zh": "酸辣流汁宽粉",
+          "price": "7.99"
+        },
+        {
+          "code": "D6",
+          "name_en": "Special Side Dishes",
+          "name_zh": "爽口小菜",
+          "description_en": "One dish $2.99, three dishes $7.99.",
+          "description_zh": "单碟 $2.99，三碟 $7.99。",
+          "price": "2.99 / 7.99",
+          "photos": [
+            {
+              "base": "images/chc-d6-side-dishes",
+              "w": 1920,
+              "h": 1677,
+              "alt_en": "Five small bowls of cold side dishes on a blue plate, including broccoli, black fungus, shredded potato and peanuts with celery",
+              "alt_zh": "爽口小菜实拍"
+            }
+          ]
         }
       ]
     },
     {
       "id": "buns",
-      "name_en": "Buns · Dumplings · Flatbreads",
+      "name_en": "Buns, Dumplings & Flat Breads",
       "name_zh": "面点类",
+      "note_en": "Limited time only.",
+      "note_zh": "限时供应。",
       "dishes": [
         {
           "code": "F1",
-          "name_en": "Signature Steamed Meat Buns (3 pcs)",
-          "name_zh": "上古特色酱肉包（3个）",
-          "description_en": "Fluffy steamed buns filled with savoury braised meat.",
-          "description_zh": "松软包子，酱香肉馅。",
-          "price": "11.80",
-          "image": "images/f1-buns.jpg",
-          "tag_en": "Popular",
-          "tag_zh": "人气推荐"
+          "name_en": "Steamed Pork Buns (4)",
+          "name_zh": "鲜肉大葱包（4个）",
+          "price": "11.99",
+          "tags": [
+            {
+              "en": "Recommended",
+              "zh": "推荐"
+            }
+          ],
+          "photos": [
+            {
+              "base": "images/chc-f1-pork-buns",
+              "w": 1920,
+              "h": 1570,
+              "alt_en": "Four steamed pork buns in a bamboo steamer",
+              "alt_zh": "鲜肉大葱包（4个）实拍"
+            }
+          ]
         },
         {
           "code": "F2",
-          "name_en": "Steamed Vegetable Buns (4 pcs)",
+          "name_en": "Steamed Vegetable Buns (4)",
           "name_zh": "素包子（4个）",
-          "description_en": "Steamed buns with a seasoned vegetable filling.",
-          "description_zh": "素馅蒸包。",
-          "price": "11.80",
-          "image": null,
-          "tag_en": "Vegetarian",
-          "tag_zh": "素食"
+          "price": "10.99",
+          "photos": [
+            {
+              "base": "images/chc-f2-veg-buns",
+              "w": 1920,
+              "h": 1649,
+              "alt_en": "Four steamed vegetable buns in a bamboo steamer",
+              "alt_zh": "素包子（4个）实拍"
+            }
+          ]
         },
         {
           "code": "F3",
-          "name_en": "Pork & Garlic-Chive Dumplings (10 pcs)",
-          "name_zh": "特色鲜肉韭菜水饺（10个）",
-          "description_en": "Boiled dumplings with pork and garlic chives.",
-          "description_zh": "鲜肉韭菜水饺。",
-          "price": "14.80",
-          "image": null
+          "name_en": "Steamed Soupy Buns (5)",
+          "name_zh": "灌汤包（5个）",
+          "price": "10.99"
         },
         {
           "code": "F4",
-          "name_en": "Vegetable Dumplings (16 pcs)",
-          "name_zh": "素水饺（16个）",
-          "description_en": "Boiled dumplings with a vegetable filling.",
-          "description_zh": "素馅水饺。",
-          "price": "14.80",
-          "image": null,
-          "tag_en": "Vegetarian",
-          "tag_zh": "素食"
+          "name_en": "Pork & Spring Onion Dumplings (16)",
+          "name_zh": "鲜肉大葱水饺（16个）",
+          "price": "16.99",
+          "tags": [
+            {
+              "en": "Recommended",
+              "zh": "推荐"
+            }
+          ],
+          "photos": [
+            {
+              "base": "images/chc-f4-pork-dumplings",
+              "w": 1920,
+              "h": 1920,
+              "alt_en": "A plate of boiled pork and spring onion dumplings",
+              "alt_zh": "鲜肉大葱水饺（16个）实拍"
+            }
+          ]
         },
         {
           "code": "F5",
-          "name_en": "Mini Pan-Fried Beef Bun (1 pc)",
-          "name_zh": "牛肉饼馍（1个）",
-          "description_en": "Crisp pan-fried flatbread stuffed with braised beef.",
-          "description_zh": "酥脆饼馍夹卤牛肉。",
-          "price": "7.80",
-          "image": null
+          "name_en": "Vegetable Dumplings (16)",
+          "name_zh": "素水饺（16个）",
+          "price": "16.99"
         },
         {
           "code": "F6",
-          "name_en": "Flatbread with Scallion & Pork",
-          "name_zh": "葱油饼夹肉酱",
-          "description_en": "Scallion flatbread with savoury pork sauce.",
-          "description_zh": "葱油饼夹肉酱。",
-          "price": "8.80",
-          "image": null
+          "name_en": "Stir-fried Cumin Lamb in Flat Bread",
+          "name_zh": "孜然羊肉夹馍",
+          "price": "8.99"
         },
         {
           "code": "F7",
-          "name_en": "Flatbread with Green Pepper & Braised Pork",
-          "name_zh": "辣子牛肉饼夹菜",
-          "description_en": "Flatbread with green pepper and braised pork.",
-          "description_zh": "饼夹青椒与卤肉。",
-          "price": "8.80",
-          "image": null
+          "name_en": "Stewed Pork in Flat Bread",
+          "name_zh": "腊汁青椒猪肉夹馍",
+          "price": "8.99",
+          "tags": [
+            {
+              "en": "Recommended",
+              "zh": "推荐"
+            }
+          ]
+        },
+        {
+          "code": "F8",
+          "name_en": "Dumplings, Half Portion (8)",
+          "name_zh": "半份水饺（8个）",
+          "price": "8.99",
+          "photos": [
+            {
+              "base": "images/chc-f8-dumplings-half",
+              "w": 1920,
+              "h": 1055,
+              "alt_en": "Close-up of boiled dumplings on a blue and white plate",
+              "alt_zh": "半份水饺（8个）实拍"
+            }
+          ]
         }
       ]
     },
@@ -332,80 +546,61 @@
       "id": "extras",
       "name_en": "Additional Options",
       "name_zh": "额外添加",
-      "note_en": "Add to any bowl.",
-      "note_zh": "任意加配。",
+      "compact": true,
       "dishes": [
         {
           "code": "G1",
-          "name_en": "Extra Noodles",
-          "name_zh": "加面",
-          "description_en": "",
-          "description_zh": "",
-          "price": "4.00",
-          "image": null
+          "name_en": "Extra Handmade Noodles",
+          "name_zh": "加手工拉面",
+          "price": "5.99"
         },
         {
           "code": "G2",
-          "name_en": "Extra Beef Shank (50g)",
-          "name_zh": "加牛腱肉（50g）",
-          "description_en": "",
-          "description_zh": "",
-          "price": "6.00",
-          "image": null
+          "name_en": "Extra Beef Shank (70g)",
+          "name_zh": "加传统牛腱肉（70g）",
+          "price": "6.99"
         },
         {
           "code": "G3",
-          "name_en": "Extra Braised Beef Brisket (90g)",
-          "name_zh": "加红烧牛肉（90g）",
-          "description_en": "",
-          "description_zh": "",
-          "price": "8.00",
-          "image": null
+          "name_en": "Extra Braised Beef, Navel End Brisket (100g)",
+          "name_zh": "加红烧牛肉（100g）",
+          "price": "8.99"
         },
         {
           "code": "G4",
-          "name_en": "Extra White Radish",
-          "name_zh": "传统白萝卜",
-          "description_en": "",
-          "description_zh": "",
-          "price": "2.50",
-          "image": null
+          "name_en": "Sliced Beef Neck Bone",
+          "name_zh": "至尊牛大骨",
+          "price": "12.99"
         },
         {
           "code": "G5",
-          "name_en": "Extra Rice",
+          "name_en": "Rice",
           "name_zh": "白米饭",
-          "description_en": "",
-          "description_zh": "",
-          "price": "2.50",
-          "image": null
+          "price": "2.99"
         },
         {
           "code": "G6",
-          "name_en": "Extra Pickled Mustard",
+          "name_en": "Pickled Cabbage",
           "name_zh": "加酸菜",
-          "description_en": "",
-          "description_zh": "",
-          "price": "3.00",
-          "image": null
+          "price": "2.99"
         },
         {
           "code": "G7",
-          "name_en": "Soy-Marinated Egg",
-          "name_zh": "加酱蛋",
-          "description_en": "",
-          "description_zh": "",
-          "price": "2.50",
-          "image": null
+          "name_en": "Marinated Egg",
+          "name_zh": "西北卤鸡蛋",
+          "price": "2.99"
         },
         {
           "code": "G8",
-          "name_en": "Extra Blanched Bok Choy",
-          "name_zh": "烫青菜",
-          "description_en": "",
-          "description_zh": "",
-          "price": "3.00",
-          "image": null
+          "name_en": "Beef Broth",
+          "name_zh": "加牛肉汤",
+          "price": "Free"
+        },
+        {
+          "code": "G9",
+          "name_en": "Takeaway Box",
+          "name_zh": "外卖餐盒",
+          "price": "1.00"
         }
       ]
     }
